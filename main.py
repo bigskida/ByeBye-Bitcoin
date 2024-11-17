@@ -1,4 +1,3 @@
-import requests
 from requests.structures import CaseInsensitiveDict
 from bs4 import BeautifulSoup
 import time
@@ -28,21 +27,19 @@ while True:
                 #requests.post("webhook URL", json={"content": f"{balance} BTC found\n\nAdress: {compaddy}\nPrivate Key: {privkey}"}) 
                 open('hits.txt', 'a+').write(f"{balance} BTC found in Adress: {compaddy} // Private Key: {privkey}")
             os.system("cls")
-            os.system(f"title Bye Bye Bitcoin // Checked Wallets: {checked} // by clout")
+            os.system(f"title Bye Bye Bitcoin // Checked Wallets: {checked} // by Vorxy")
             print(f"""
             .-.____________________.-.
      ___ _.' .-----.    _____________|======+--------------------+
     /_._/   (      |   /_____________|      |   Bye Bye Bitcoin  |
-      /      `  _ ____/                     |      by clout      |
+      /        _ ____/                     |      by Vorxy      |
      |_      .\( \\                          |____________________|
-    .'  `-._/__`_//
+    .'  -._/___//
   .'       |'           Private Key: {privkey}
  /        /             Uncompressed Address: {uncompaddy}
 /        |              Compressed Address: {compaddy}
 |        '              Balance: {balance}
 |        |
-`-._____.-'""")
-        time.sleep(0.5)
-    
-
+-._____.-'""")
+        time.sleep(0.1)
     
